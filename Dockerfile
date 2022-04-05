@@ -12,12 +12,6 @@ WORKDIR /usr/src
 #               WORKDIR, so `.` == WORKDIR)
 COPY package.json /usr/src/
 
-# copy pages and supporting bits and pieces
-#              (again, relative to WORKDIR)
-#ADD pages       pages/
-#ADD shared      shared/
-#ADD components  components/
-
 # install dependencies
 RUN yarn install
 

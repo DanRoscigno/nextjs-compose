@@ -59,7 +59,6 @@ development mode.
 In the `docker-compose.yml` file the volumes are configured like so:
 ```
     volumes: # Links the source files to the running container
-      - ./package.json:/usr/src/package.json
       - ./pages:/usr/src/pages
       - ./shared:/usr/src/shared
       - ./components:/usr/src/components

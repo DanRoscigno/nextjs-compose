@@ -17,7 +17,7 @@ preference).
 
 ## Build
 
-The only required files to build is `package.json`.
+The only required file to build is `package.json`.
 But, since you cannot run `next.js` without a `pages` dir,
 also populate at least one file in pages.
 
@@ -33,7 +33,7 @@ Note: if you add a new content dir, then add it to the
     package.json and the content files).
 
 ## Build setup
-The command to build a new Docker image is `docker compose build`.
+The command to build the Docker image is `docker compose build`.
 This command causes an image to be built with `package.json` in 
 place, and `yarn install` to be run.  See the `Dockerfile` and
 `docker-compose.yml`.
@@ -43,7 +43,7 @@ place, and `yarn install` to be run.  See the `Dockerfile` and
 It is nice to have a few files in the content dirs as you learn
 any content presentation system.  The 
 [blog on medium](https://medium.com/swlh/dockerize-your-next-js-application-91ade32baa6)
-is great in my opinion, and I am using that content to build the
+is great in my opinion, and I am using that content while I build the
 compose file.
 
 ## Commands I ran

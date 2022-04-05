@@ -1,0 +1,14 @@
+version: '3.8' 
+services: 
+  client: 
+    build:
+      context: .
+      dockerfile: Dockerfile
+    working_dir: /usr/src
+    volumes: # Links the source files to the running container 
+      - ./package.json:/usr/src/package.json
+      - ./pages:/usr/src/pages
+      - ./shared:/usr/src/shared
+      - ./components:/usr/src/components
+    ports:
+      - "3000:3000"

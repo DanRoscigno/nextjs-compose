@@ -17,11 +17,8 @@ mkdir shared
 vi shared/global.css
 yarn run dev
 vi Dockerfile
-docker build -t client .
-docker run --name CLIENT_CONTAINER -p 0.0.0.0:5000:3000 client
-docker run --name CLIENT_CONTAINER -p 0.0.0.0:3000:3000 client
-docker rm CLIENT_CONTAINER
-docker run --name CLIENT_CONTAINER -p 0.0.0.0:3000:3000 client
+docker build -t nextjs-dev .
+docker run --name NEXTJS-DEV -p 0.0.0.0:3000:3000 nextjs-dev
 ```
 
 ## What I want
